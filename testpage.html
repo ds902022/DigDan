@@ -8,16 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <style>
-      nav, .button{
+      nav, .navbar-item{
         background: #3F51B5;
         border-width: 0px;
         color: #ffffff;
       }
-      .button:hover{
+      .navbar-item:hover:not(.notactive){
         color: #ffffff;
+        background: #5C6BC0;
       }
-      .button:hover:not(.active){
+      .navbar-item:hover:not(.active){
         background: #283593;
+        color: #ffffff
       }
       .active{
         background: #5C6BC0;
@@ -32,13 +34,13 @@
     </style>
   </head>
   <body>
-  <nav class="level">
-    <div class="buttons has-addons has-text-centered">
-      <a class="button" href="index.html">HOME</a>
-      <a class="button" href="currentusage.html">CURRENT USAGE</a>
-      <a class="button" href="futureusage.html">FUTURE USAGE</a>
-      <a class="button" href="contact.html">CONTACT</a>
-      <a class="button active" href="testpage.html">TESTING</a>
+  <nav class="level has-text-centered">
+    <div class="navbar-start">
+      <a class="navbar-item" href="index.html">HOME</a>
+      <a class="navbar-item" href="currentusage.html">CURRENT USAGE</a>
+      <a class="navbar-item" href="futureusage.html">FUTURE USAGE</a>
+      <a class="navbar-item" href="contact.html">CONTACT</a>
+      <a class="navbar-item active" href="testpage.html">TESTING</a>
     </div>
   </nav>
   <section class="section">
