@@ -6,42 +6,66 @@
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link type="text/css" rel="stylesheet" href="assets/css/testpage.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <style>
+      nav, .button{
+        background: #3F51B5;
+        border-width: 0px;
+        color: #ffffff;
+      }
+      .button:hover{
+        background: #283593;
+      }
+      .active .button{
+        background: #5C6BC0;
+      }
+    </style>
   </head>
   <body>
-  <ul class="nav">
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="currentusage.html">CURRENT USAGE</a></li>
-    <li><a href="futureusage.html">FUTURE USAGE</a></li>
-    <li><a href="contact.html">CONTACT</a></li>
-    <li><a class="active" href="testpage.html">Testing</a></li>
-  </ul>
-  <div class="content">
-    <section class="section">
-      <div class="container">
-        <h1 class="title">
-          Hello World
-        </h1>
-        <p class="subtitle">
-          My first website with <a href="https://bulma.io/" target="_blank"><strong>Bulma</strong></a>!
-        </p>
+  <nav class="level">
+    <div class="level-left">
+      <div class="level-item has-text-centered">
+        <a class="button" href="index.html">HOME</a>
       </div>
-      <div class="container">
-        <p>
-          This is a new line
-        </p>
+      <div class="level-item has-text-centered">
+        <a class="button" href="currentusage.html">CURRENT USAGE</a>
       </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <p style="text-align:center">
-          This is another new line
-        </p>
+      <div class="level-item has-text-centered">
+        <a class="button" href="futureusage.html">FUTURE USAGE</a>
       </div>
-    </section>
-  </div>
-  <div class="foot">
+      <div class="level-item has-text-centered">
+        <a class="button" href="contact.html">CONTACT</a>
+      </div>
+      <div class="level-item has-text-centered">
+        <div class="active">
+        <a class="button" href="testpage.html">TESTING</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first page with <a href="https://bulma.io/" target="_blank"><strong>Bulma</strong></a>!
+      </p>
+    </div>
+    <div class="container">
+      <p>
+        This is a new line
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <p style="text-align:center">
+        This is another new line
+      </p>
+    </div>
+  </section>
+  <div class="footer" style="color:#ffffff; background:#3F51B5">
     <h5>Made by Daniel Spalding</h5>
   </div>
   </body>
