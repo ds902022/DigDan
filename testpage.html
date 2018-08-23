@@ -14,33 +14,31 @@
         color: #ffffff;
       }
       .button:hover{
+        color: #ffffff;
+      }
+      .button:hover:not(.active){
         background: #283593;
       }
-      .active .button{
+      .active{
         background: #5C6BC0;
+      }
+      html, body{
+        background-color: #1a1919;
+        color: #ffffff;
+        font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        line-height: normal;
       }
     </style>
   </head>
   <body>
   <nav class="level">
-    <div class="level-left">
-      <div class="level-item has-text-centered">
-        <a class="button" href="index.html">HOME</a>
-      </div>
-      <div class="level-item has-text-centered">
-        <a class="button" href="currentusage.html">CURRENT USAGE</a>
-      </div>
-      <div class="level-item has-text-centered">
-        <a class="button" href="futureusage.html">FUTURE USAGE</a>
-      </div>
-      <div class="level-item has-text-centered">
-        <a class="button" href="contact.html">CONTACT</a>
-      </div>
-      <div class="level-item has-text-centered">
-        <div class="active">
-        <a class="button" href="testpage.html">TESTING</a>
-        </div>
-      </div>
+    <div class="buttons has-addons has-text-centered">
+      <a class="button" href="index.html">HOME</a>
+      <a class="button" href="currentusage.html">CURRENT USAGE</a>
+      <a class="button" href="futureusage.html">FUTURE USAGE</a>
+      <a class="button" href="contact.html">CONTACT</a>
+      <a class="button active" href="testpage.html">TESTING</a>
     </div>
   </nav>
   <section class="section">
