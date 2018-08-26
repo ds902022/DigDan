@@ -76,11 +76,26 @@ p{
 }
 .footer{
     background: #3F51B5;
-    flex-shrink: 0;
 }
-.footer h5{
+.footer a{
+    color: #000000;
+    text-decoration: none;
+}
+.footer .is-flex{
+    justify-content: center;
+    align-items: center;
+    display: flex;
     padding: 8px 16px;
-    text-align: right;
+}
+.is-24x24{
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+}
+img{
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 @media screen and (max-width: 767px) {
     .contentcontainer{
@@ -92,6 +107,12 @@ p{
         font-size: 15px;
     }
     .nav a{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .nav li{
+        width: 100%
     }
 }
