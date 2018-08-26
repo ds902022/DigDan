@@ -28,6 +28,11 @@
       .active{
         background: #5C6BC0;
       }
+      body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
       html, body{
         background-color: #1a1919;
         color: #ffffff;
@@ -41,6 +46,9 @@
       .footer .is-flex{
         justify-content: center;
         align-items: center;
+      }
+      .extender{
+        flex: 1 0 auto;
       }
     </style>
   </head>
@@ -76,6 +84,7 @@
       </p>
     </div>
   </section>
+  <div class="extender"></div>
   <footer class="footer" style="background:#3F51B5">
     <div class="is-flex">
       <a href="https://github.com/ds902022/DigDan" target="_blank">
