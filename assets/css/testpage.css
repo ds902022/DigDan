@@ -1,62 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
-  }
-html, body{
-    background-color: #1a1919;
-    color: #ffffff;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    line-height: normal;
+nav, .navbar-item{
+  background-color: #3F51B5;
+  color: #ffffff;
 }
-html{
-    height: 100%;
+.navbar-start .navbar-item:hover:not(.notactive){
+  background-color: #5C6BC0;
+  color: #ffffff;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-.nav{
-    display: flex;
-    align-items: center;
-    background: #3F51B5;
-    list-style-type: none;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-.nav a{
-    color: #E8EAF6;
-    padding: 14px 16px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-.nav a:hover{
-    text-decoration: none;
+.navbar-start .navbar-item:hover:not(.active){
+  background-color: #283593;
+  color: #ffffff
 }
 .active{
-    background-color: #5C6BC0;
+  background: #5C6BC0;
 }
-li a:hover:not(.active) {
-    background-color: #283593;
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
-.content{
-    flex: 1 0 auto;
+html, body{
+  background-color: #1a1919;
+  color: #ffffff;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: normal;
 }
-.foot{
-    background: #3F51B5;
-    flex-shrink: 0;
+.footer a{
+  color: #000000;
 }
-.foot h5{
-    padding: 8px 16px;
-    text-align: right;
-    font-size: 13px;
-    font-weight: bold;
+.footer .is-flex{
+  justify-content: center;
+  align-items: center;
 }
-@media screen and (max-width: 767px) {
-    .nav a{
-        font-size: 12px;
-    }
+.extender{
+  flex: 1 0 auto;
 }
