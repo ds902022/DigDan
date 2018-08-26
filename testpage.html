@@ -3,22 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Daniel Spalding" />
     <title>Hello Bulma!</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/tractor-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/tractor-152.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <style>
       nav, .navbar-item{
-        background: #3F51B5;
-        border-width: 0px;
+        background-color: #3F51B5;
         color: #ffffff;
       }
-      .navbar-item:hover:not(.notactive){
+      .navbar-start .navbar-item:hover:not(.notactive){
+        background-color: #5C6BC0;
         color: #ffffff;
-        background: #5C6BC0;
       }
-      .navbar-item:hover:not(.active){
-        background: #283593;
+      .navbar-start .navbar-item:hover:not(.active){
+        background-color: #283593;
         color: #ffffff
       }
       .active{
@@ -30,6 +34,13 @@
         font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 400;
         line-height: normal;
+      }
+      .footer a{
+        color: #000000;
+      }
+      .footer .is-flex{
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
@@ -65,8 +76,17 @@
       </p>
     </div>
   </section>
-  <div class="footer" style="color:#ffffff; background:#3F51B5">
-    <h5>Made by Daniel Spalding</h5>
-  </div>
+  <footer class="footer" style="background:#3F51B5">
+    <div class="is-flex">
+      <a href="https://github.com/ds902022/DigDan" target="_blank">
+        <div class="is-flex">
+          <figure class="image is-24x24" style="margin-right:4px">
+            <img src="assets/images/Github.png">
+          </figure>
+          Github
+        </div>
+      </a>
+    </div>
+  </footer>
   </body>
 </html>
