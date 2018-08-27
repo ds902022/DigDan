@@ -35,3 +35,9 @@ html, body{
 .extender{
   flex: 1 0 auto;
 }
+.navbar-brand{
+  min-height: 1em;
+}
+span{
+  color: #1a1919;
+}
